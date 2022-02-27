@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository contains a set of MATLAB tools.
+This repository contains a set of MATLAB tools. Each file in `src` provides a standalone function.
 
 ## Contact
 
