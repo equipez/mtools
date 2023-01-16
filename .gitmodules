@@ -1,0 +1,3 @@
+[submodule "src/setup_mex"]
+	path = src/setup_mex
+	url = git@github.com:/equipez/setup_mex.git
