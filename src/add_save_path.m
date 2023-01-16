@@ -3,12 +3,15 @@ function path_saved = add_save_path(path_string, path_string_stamp)
 % PATH_STRING_STAMP is a stamp used when writing PATH_STRING to the user's startup.m file, which is
 % needed only if `savepath` fails.
 
+callstack = dbstack;
+funname = callstack(1).name; % Name of the current function
+
 if nargin < 2
     path_string_stamp = sprintf('Added by %s', mfilename);
 end
 
 if ~exist(path_string, 'dir')
-    error('Add_Save_Path:PathNotExist', 'The string %s does not correspond to an existing directory.', path_string);
+    error(sprintf('%s:PathNotExist', funname), 'The string %s does not correspond to an existing directory.', path_string);
 end
 
 addpath(path_string);
