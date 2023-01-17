@@ -1,3 +1,6 @@
 [submodule "src/setup_mex"]
 	path = src/setup_mex
 	url = git@github.com:/equipez/setup_mex.git
+[submodule "setup_mex"]
+	path = setup_mex
+	url = git@github.com:equipez/setup_mex.git
